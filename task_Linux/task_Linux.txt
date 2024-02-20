@@ -1,0 +1,132 @@
+
+   34  cd ~/Documents/hw_specialization
+   35  cat > pack_animals.txt
+   36  cat > pets.txt
+   37  cat pack_animals.txt >> pets.txt
+   38  cat pets.txt
+   39  ls
+   40  rm pack_animals.txt
+   41  ls
+   42  mv pets.txt human_friends.txt
+   43  ls
+   44  mkdir animals
+   45  ls
+   46  mv human_friends.txt animals
+   47  ls
+   48  cd animals
+   49  ls
+   50  cd ~
+   51  sudo -i
+   52  apt update
+   53  exit
+   54  cd ~/Downloads/
+   55  sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+   56  sudo apt update
+   57  sudo apt install mysql-workbench-community
+   58  sudo dpkg -l 'mysql-wor*'
+   59  sudo dpkg -r mysql-workbench-community
+   60  sudo dpkg -l 'mysql-wor*'
+   61  history
+enl@ASUSLaptosha:~$ 
+
+
+
+
+
+enl@ASUSLaptosha:~$ cd ~/Documents/hw_specialization
+enl@ASUSLaptosha:~/Documents/hw_specialization$ cat > pack_animals.txt
+camel
+horse
+donkey
+enl@ASUSLaptosha:~/Documents/hw_specialization$ cat > pets.txt
+dog
+cat
+hamster
+enl@ASUSLaptosha:~/Documents/hw_specialization$ cat pack_animals.txt >> pets.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ cat pets.txt
+dog
+cat
+hamster
+camel
+horse
+donkey
+enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
+animals  pack_animals.txt  pets.txt  README.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ rm pack_animals.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
+pets.txt  README.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ mv pets.txt human_friends.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
+human_friends.txt  README.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ mkdir animals
+enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
+animals  human_friends.txt  README.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ mv human_friends.txt animals
+enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
+animals  README.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ cd animals
+enl@ASUSLaptosha:~/Documents/hw_specialization/animals$ ls
+human_friends.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization/animals$ cd ~
+enl@ASUSLaptosha:~$ sudo -i
+[sudo] password for enl: 
+root@ASUSLaptosha:~# apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+...
+
+mysqld is running as pid 4020
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/sys
+tem/mysql.service.
+Setting up mysql-server (8.0.36-0ubuntu0.22.04.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+root@ASUSLaptosha:~# exit
+logout
+enl@ASUSLaptosha:~$ cd ~/Downloads/
+enl@ASUSLaptosha:~/Downloads$ sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+[sudo] password for enl: 
+Selecting previously unselected package mysql-apt-config.
+(Reading database ... 201091 files and directories currently installed.)
+Preparing to unpack mysql-apt-config_0.8.29-1_all.deb ...
+Unpacking mysql-apt-config (0.8.29-1) ...
+Setting up mysql-apt-config (0.8.29-1) ...
+enl@ASUSLaptosha:~/Downloads$ sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease                          
+...
+enl@ASUSLaptosha:~/Downloads$ sudo apt install mysql-workbench-community
+Reading package lists... Done
+Building dependency tree... Done
+
+....
+
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+enl@ASUSLaptosha:~$ sudo dpkg -l 'mysql-wor*'
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                      Version             Architecture Description
++++-=========================-===================-============-============================>
+un  mysql-workbench           <none>              <none>       (no description available)
+ii  mysql-workbench-community 8.0.36-1ubuntu22.04 amd64        MySQL Workbench
+un  mysql-workbench-data      <none>              <none>       (no description available)
+un  mysql-workbench-gpl       <none>              <none>       (no description available)
+un  mysql-workbench-oss       <none>              <none>       (no description available)
+lines 1-10/10 (END)
+enl@ASUSLaptosha:~$ ^C
+enl@ASUSLaptosha:~$ sudo dpkg -r mysql-workbench-community
+(Reading database ... 202514 files and directories currently installed.)
+Removing mysql-workbench-community (8.0.36-1ubuntu22.04) ...
+Processing triggers for shared-mime-info (2.1-2) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+enl@ASUSLaptosha:~$ sudo dpkg -l 'mysql-wor*'
+dpkg-query: no packages found matching mysql-wor*
+enl@ASUSLaptosha:~$ history
+
+
+
+
