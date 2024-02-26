@@ -9,11 +9,11 @@
    41  ls
    42  mv pets.txt human_friends.txt
    43  ls
-   44  mkdir animals
+   44  mkdir task_Linux
    45  ls
    46  mv human_friends.txt animals
    47  ls
-   48  cd animals
+   48  cd task_Linux
    49  ls
    50  cd ~
    51  sudo -i
@@ -51,23 +51,23 @@ camel
 horse
 donkey
 enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
-animals  pack_animals.txt  pets.txt  README.txt
+pack_animals.txt  pets.txt  README.txt
 enl@ASUSLaptosha:~/Documents/hw_specialization$ rm pack_animals.txt
 enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
 pets.txt  README.txt
 enl@ASUSLaptosha:~/Documents/hw_specialization$ mv pets.txt human_friends.txt
 enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
 human_friends.txt  README.txt
-enl@ASUSLaptosha:~/Documents/hw_specialization$ mkdir animals
+enl@ASUSLaptosha:~/Documents/hw_specialization$ mkdir task_Linux
 enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
-animals  human_friends.txt  README.txt
-enl@ASUSLaptosha:~/Documents/hw_specialization$ mv human_friends.txt animals
+task_Linux  human_friends.txt  README.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ mv human_friends.txt task_Linux
 enl@ASUSLaptosha:~/Documents/hw_specialization$ ls
-animals  README.txt
-enl@ASUSLaptosha:~/Documents/hw_specialization$ cd animals
-enl@ASUSLaptosha:~/Documents/hw_specialization/animals$ ls
+task_Linux  README.txt
+enl@ASUSLaptosha:~/Documents/hw_specialization$ cd task_Linux
+enl@ASUSLaptosha:~/Documents/hw_specialization/task_Linux$ ls
 human_friends.txt
-enl@ASUSLaptosha:~/Documents/hw_specialization/animals$ cd ~
+enl@ASUSLaptosha:~/Documents/hw_specialization/task_Linux$ cd ~
 enl@ASUSLaptosha:~$ sudo -i
 [sudo] password for enl: 
 root@ASUSLaptosha:~# apt update
