@@ -23,15 +23,6 @@ public class Select implements ISelect{
     }
     @Override
     public void getSummaryTable(ArrayList<Group> groups,ArrayList<Type> types,ArrayList<Animal> animals) {
-        for (var itemGroup: groups) {
-            for (var itemType: types){
-                for (var itemAnimal: animals) {
-                    if (itemAnimal.typeName.equals(itemType.name) && itemType.name.equals(itemGroup.name))
-                        System.out.printf("id: %s, group: %s - %s, type: %s - %s, nickname: %s, birthday: %s;\n",
-                                itemAnimal.id, itemGroup.id, itemGroup.name, itemType.id, itemType.name,
-                                itemAnimal.name, itemAnimal.birthday);
-                }
-            }
-        }
+ 
     }
 }
