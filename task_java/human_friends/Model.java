@@ -206,4 +206,10 @@ public class Model implements ICollection {
         }
         return null;
     }
+    public void getYoungAnimals(){
+        select.getYoungAnimals(animals);
+    }
+    public void getSummaryTable(){
+        select.getSummaryTable(animalsGroups,animalsTypes,animals);
+    }
 }

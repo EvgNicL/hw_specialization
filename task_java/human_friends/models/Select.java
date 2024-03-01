@@ -2,6 +2,7 @@ package human_friends.models;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
 public class Select implements ISelect{
@@ -13,7 +14,8 @@ public class Select implements ISelect{
         for (var item: list) {
             LocalDate b = LocalDate.parse(item.birthday);
             Period period = getPeriod(b);
-            if (period.getYears() >= 1 && period.getYears() <=3) System.out.println(item.toString() + period.getMonths());
+            if (period.getYears() >= 1 && period.getYears() <=3) System.out.print(item.toString() +
+                    ChronoUnit.MONTHS.between(b.withDayOfMonth(1), LocalDate.now().withDayOfMonth(1)) + " months");
         }
     }
     private Period getPeriod(LocalDate date){
