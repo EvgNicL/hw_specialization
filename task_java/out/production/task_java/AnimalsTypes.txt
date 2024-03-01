@@ -1,0 +1,2 @@
+1, pet, cat
+2, pack_animals, camel
