@@ -28,7 +28,7 @@ public class Select implements ISelect{
                 if (itemT.name.equals(item.typeName)) {
                     System.out.printf("id: %s, type: %s - %s, nickname: %s, birthday: %s, commands; %s;\n",
                                     item.id, itemT.id, item.typeName, item.name, item.birthday, item.commands);
-                    break;  // до этого места работает,  а дальше не хочет... 
+                      // до этого места работает,  а дальше не хочет... 
     //               for (var itemG: groups){
 //                        if (itemG.name.equals(itemT.name)) {
 //                            System.out.printf("id: %s, group: %s - %s, type: %s - %s, nickname: %s, birthday: %s, commands; %s;\n",
