@@ -26,13 +26,17 @@ public class Select implements ISelect{
          for (var item: animals) {
             for (var itemT: types){
                 if (itemT.name.equals(item.typeName)) {
-                    for (var itemG: groups){
-                        if (itemG.name.equals(itemT.name)) {
-                            System.out.printf("id: %s, group: %s - %s, type: %s - %s, nickname: %s, birthday: %s, commands; %s;\n",
-                                    item.id, itemG.id, itemG.name, itemT.id,
-                                    item.typeName, item.name, item.birthday, item.commands);
-                        }
-                    }
+                    System.out.printf("id: %s, type: %s - %s, nickname: %s, birthday: %s, commands; %s;\n",
+                                    item.id, itemT.id, item.typeName, item.name, item.birthday, item.commands);
+                    break;  // до этого места работает,  а дальше не хочет... 
+    //               for (var itemG: groups){
+//                        if (itemG.name.equals(itemT.name)) {
+//                            System.out.printf("id: %s, group: %s - %s, type: %s - %s, nickname: %s, birthday: %s, commands; %s;\n",
+//                                    item.id, itemG.id, itemG.name, itemT.id,
+//                                    item.typeName, item.name, item.birthday, item.commands);
+//                           
+//                        }
+//                    }
                 }
             }
         }
